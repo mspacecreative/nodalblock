@@ -2,8 +2,8 @@ body {
 	margin: 0;
 	font-family: sans-serif;
 }
-.carousel, .carousel div {
-	height: 100vh;
+.carousel, .carousel div, html, body {
+	height: 100%;
 }
 .carousel div {
 	background-size: cover;
