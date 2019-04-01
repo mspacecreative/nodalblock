@@ -87,3 +87,47 @@ body {
 	display: block;
 	font-size: 12px;
 }
+.logo img {
+	width: 400px;
+	height: auto;
+	margin-bottom: 50px;
+}
+html, body, .buttons {
+	height: 100%;
+}
+.buttons {
+	background: radial-gradient(circle, #1CB5E0 0%, #000851 100%);
+	text-align: center;
+	display: table;
+	width: 100%;
+}
+.buttons-inner {
+	display: table-cell;
+	vertical-align: middle;
+}
+.buttons ul {
+	text-align: center;
+	font-size: 0;
+	margin: 0;
+	padding: 0;
+}
+.buttons li {
+	display: inline-block;
+	text-decoration: none;
+	padding: 10px;
+}
+
+.buttons li a {
+	text-decoration: none;
+	padding: 10px 15px;
+	display: block;
+	border: 2px solid #fff;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #fff;
+	transition: 0.25s ease-in-out;
+}
+.buttons li a:hover {
+	background-color: rgba(255, 255, 255, .25);
+	transition: 0.25s ease-in-out;
+}
