@@ -1,0 +1,89 @@
+body {
+	margin: 0;
+	font-family: sans-serif;
+}
+.carousel, .carousel div {
+	height: 100vh;
+}
+.carousel div {
+	background-size: cover;
+	background-position: center;
+	background-attachment: scroll;
+}
+.carousel .slick-next, .carousel .slick-prev {
+	position: absolute;
+	bottom: 50px;
+	z-index: 1;
+	font-size: 0;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+.carousel .slick-next:focus, .carousel .slick-prev:focus {
+	outline: none;
+}
+.carousel .slick-prev {
+	position: absolute;
+	bottom: 50px;
+	right: 100px;
+}
+.carousel .slick-next {
+	position: absolute;
+	bottom: 50px;
+	right: 50px;
+}
+.carousel .slick-dots {
+	position: absolute;
+	right: 55px;
+	bottom: 30px;
+}
+.carousel .slick-dots {
+	padding: 0;
+	margin: 0;
+}
+.carousel .slick-slide:focus, .carousel .slick-dots button {
+	outline: none;
+}
+.carousel .slick-dots li {
+	display: inline-block;
+	padding: 5px;
+}
+.carousel .slick-dots button {
+	background: none;
+	border: none;
+	border-radius: 200px;
+	margin: 0;
+	padding: 5px;
+	font-size: 0;
+	background: rgb(88,82,123);
+	cursor: pointer;
+}
+.carousel .slick-dots li.slick-active button {
+	background: #fff;
+}
+.carousel .slick-prev:before {
+    content: '\f104';
+}
+.carousel .slick-next:before {
+    content: '\f105';
+}
+.carousel .slick-next:before, .carousel .slick-prev:before {
+	font-size: 60px;
+	    font-family: fontAwesome;
+	    color: #fff;
+}
+.home-button {
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 99;
+}
+.home-button a {
+	text-decoration: none;
+	padding: 10px 15px;
+	background: rgba(255, 255, 255, .75);
+	text-transform: uppercase;
+	color: #333;
+	display: block;
+	font-size: 12px;
+}
