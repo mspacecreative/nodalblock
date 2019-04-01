@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NodalBlock Demo</title>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<style>
+		body {
+			margin: 0;
+		}
+		.carousel, .carousel div {
+			height: 100vh;
+		}
+		.carousel div {
+			background-size: cover;
+			background-position: center;
+			background-attachment: scroll;
+		}
+		.carousel .slick-next, .carousel .slick-prev {
+			position: absolute;
+			bottom: 50px;
+			z-index: 1;
+			font-size: 0;
+			background: none;
+			border: none;
+			cursor: pointer;
+		}
+		.carousel .slick-next:focus, .carousel .slick-prev:focus {
+			outline: none;
+		}
+		.carousel .slick-prev {
+			position: absolute;
+			bottom: 50px;
+			right: 100px;
+		}
+		.carousel .slick-next {
+			position: absolute;
+			bottom: 50px;
+			right: 50px;
+		}
+		.carousel .slick-dots {
+			position: absolute;
+			right: 55px;
+			bottom: 30px;
+		}
+		.carousel .slick-dots {
+			padding: 0;
+			margin: 0;
+		}
+		.carousel .slick-slide:focus, .carousel .slick-dots button {
+			outline: none;
+		}
+		.carousel .slick-dots li {
+			display: inline-block;
+			padding: 5px;
+		}
+		.carousel .slick-dots button {
+			background: none;
+			border: none;
+			border-radius: 200px;
+			margin: 0;
+			padding: 5px;
+			font-size: 0;
+			background: rgb(88,82,123);
+			cursor: pointer;
+		}
+		.carousel .slick-dots li.slick-active button {
+			background: #fff;
+		}
+		.carousel .slick-prev:before {
+		    content: '\f104';
+		}
+		.carousel .slick-next:before {
+		    content: '\f105';
+		}
+		.carousel .slick-next:before, .carousel .slick-prev:before {
+			font-size: 60px;
+			    font-family: fontAwesome;
+			    color: #fff;
+		}
+	</style>
+</head>
+<body>
+	<div class="carousel">
+		<div style="background-image: url(img/screen-1.jpg);"></div>
+		<div style="background-image: url(img/screen-2.jpg);"></div>
+		<div style="background-image: url(img/screen-3.jpg);"></div>
+		<div style="background-image: url(img/screen-4.jpg);"></div>
+		<div style="background-image: url(img/screen-5.jpg);"></div>
+		<div style="background-image: url(img/screen-6.jpg);"></div>
+	</div>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script type="text/javascript" src="https://use.fontawesome.com/6ccd600e51.js"></script>
+	<script>
+		$('.carousel').slick({
+		    arrows: true,
+			dots: true,
+		});
+	</script>
+</body>
+</html>
